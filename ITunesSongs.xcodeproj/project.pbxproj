@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17C472E56638B633D299080A /* libPods-ITunesSongs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD19390D63538B2684571E30 /* libPods-ITunesSongs.a */; };
+		7333E6AE0F692A4537A3827A /* ISSplitControllerConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7333E568609767D08A2FFA15 /* ISSplitControllerConfigurator.m */; };
+		7333ED1E2610908FFF013FF5 /* ISAppDependencyBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7333EAC91C07F8C1C059ED34 /* ISAppDependencyBuilder.m */; };
+		EF1397041A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1397031A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.m */; };
+		EF2F886E1A7638000040714A /* ISSearchInteractorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F886D1A7638000040714A /* ISSearchInteractorTest.m */; };
+		EF2F88771A763AC80040714A /* XCTestCaseBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2F88761A763AC80040714A /* XCTestCaseBase.m */; };
+		EF5712571A758AB3004A2577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5712561A758AB3004A2577 /* main.m */; };
+		EF57125A1A758AB3004A2577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5712591A758AB3004A2577 /* AppDelegate.m */; };
+		EF5712631A758AB3004A2577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5712611A758AB3004A2577 /* Main.storyboard */; };
+		EF5712651A758AB3004A2577 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5712641A758AB3004A2577 /* Images.xcassets */; };
+		EF5712681A758AB3004A2577 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF5712661A758AB3004A2577 /* LaunchScreen.xib */; };
+		EF5712881A758AE6004A2577 /* ISRequestManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5712861A758AE6004A2577 /* ISRequestManagerTest.m */; };
+		EF5712891A758AE6004A2577 /* ISSongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5712871A758AE6004A2577 /* ISSongTests.m */; };
+		EF57128C1A759178004A2577 /* NSObject+PropertyIntrospection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF57128B1A759178004A2577 /* NSObject+PropertyIntrospection.m */; };
+		EF5CD6851A7709330026BD69 /* ISRequestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6641A7709330026BD69 /* ISRequestProvider.m */; };
+		EF5CD6861A7709330026BD69 /* ISJsonDataPaser.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6681A7709330026BD69 /* ISJsonDataPaser.m */; };
+		EF5CD6871A7709330026BD69 /* ISSong.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD66B1A7709330026BD69 /* ISSong.m */; };
+		EF5CD6881A7709330026BD69 /* NSArray+HOM.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD66F1A7709330026BD69 /* NSArray+HOM.m */; };
+		EF5CD6891A7709330026BD69 /* ISSearchInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6711A7709330026BD69 /* ISSearchInteractor.m */; };
+		EF5CD68A1A7709330026BD69 /* ISSongCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6741A7709330026BD69 /* ISSongCreator.m */; };
+		EF5CD68B1A7709330026BD69 /* ISArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6781A7709330026BD69 /* ISArrayDataSource.m */; };
+		EF5CD68C1A7709330026BD69 /* ISCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD67C1A7709330026BD69 /* ISCircleImageView.m */; };
+		EF5CD68D1A7709330026BD69 /* ISSongDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD67E1A7709330026BD69 /* ISSongDetailsController.m */; };
+		EF5CD68E1A7709330026BD69 /* ISSongsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6821A7709330026BD69 /* ISSongsListCell.m */; };
+		EF5CD68F1A7709330026BD69 /* ISSongsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5CD6841A7709330026BD69 /* ISSongsListController.m */; };
+		EFC8D0941A768EF5005F4E4B /* ISFakeSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC8D0931A768EF5005F4E4B /* ISFakeSearch.m */; };
+		EFC8D0961A76970D005F4E4B /* TestJson.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFC8D0951A76970D005F4E4B /* TestJson.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF57126E1A758AB3004A2577 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF5712491A758AB3004A2577 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF5712501A758AB3004A2577;
+			remoteInfo = ITunesSongs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		380B74F3F00C0CCBAC73FAFB /* Pods-ITunesSongs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITunesSongs.release.xcconfig"; path = "Pods/Target Support Files/Pods-ITunesSongs/Pods-ITunesSongs.release.xcconfig"; sourceTree = "<group>"; };
+		6BAFA7ACC91C1254E190EFD5 /* Pods-ITunesSongs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITunesSongs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ITunesSongs/Pods-ITunesSongs.debug.xcconfig"; sourceTree = "<group>"; };
+		7333E568609767D08A2FFA15 /* ISSplitControllerConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSplitControllerConfigurator.m; sourceTree = "<group>"; };
+		7333EAC91C07F8C1C059ED34 /* ISAppDependencyBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISAppDependencyBuilder.m; sourceTree = "<group>"; };
+		7333EBB171D9F79E371FAC72 /* ISDataParserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISDataParserProtocol.h; sourceTree = "<group>"; };
+		7333EF2D38D15D0BBCF770F5 /* ISSplitControllerConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSplitControllerConfigurator.h; sourceTree = "<group>"; };
+		7333EFC53AD50253F1F0679E /* ISAppDependencyBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISAppDependencyBuilder.h; sourceTree = "<group>"; };
+		CD19390D63538B2684571E30 /* libPods-ITunesSongs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ITunesSongs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1397021A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ISSongsListCell+configureWithSong.h"; sourceTree = "<group>"; };
+		EF1397031A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ISSongsListCell+configureWithSong.m"; sourceTree = "<group>"; };
+		EF2F886D1A7638000040714A /* ISSearchInteractorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSearchInteractorTest.m; path = ITunesSongsTests/ISSearchInteractorTest.m; sourceTree = SOURCE_ROOT; };
+		EF2F88731A7639430040714A /* XCTestCaseBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTestCaseBase.h; sourceTree = "<group>"; };
+		EF2F88761A763AC80040714A /* XCTestCaseBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCTestCaseBase.m; sourceTree = "<group>"; };
+		EF5712511A758AB3004A2577 /* ITunesSongs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITunesSongs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5712551A758AB3004A2577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5712561A758AB3004A2577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF5712581A758AB3004A2577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF5712591A758AB3004A2577 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF5712621A758AB3004A2577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF5712641A758AB3004A2577 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF5712671A758AB3004A2577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EF57126D1A758AB3004A2577 /* ITunesSongsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITunesSongsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5712721A758AB3004A2577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5712861A758AE6004A2577 /* ISRequestManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRequestManagerTest.m; sourceTree = "<group>"; };
+		EF5712871A758AE6004A2577 /* ISSongTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSongTests.m; sourceTree = "<group>"; };
+		EF57128A1A759178004A2577 /* NSObject+PropertyIntrospection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertyIntrospection.h"; sourceTree = "<group>"; };
+		EF57128B1A759178004A2577 /* NSObject+PropertyIntrospection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertyIntrospection.m"; sourceTree = "<group>"; };
+		EF5CD6631A7709330026BD69 /* ISRequestProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISRequestProvider.h; sourceTree = "<group>"; };
+		EF5CD6641A7709330026BD69 /* ISRequestProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISRequestProvider.m; sourceTree = "<group>"; };
+		EF5CD6671A7709330026BD69 /* ISJsonDataPaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISJsonDataPaser.h; sourceTree = "<group>"; };
+		EF5CD6681A7709330026BD69 /* ISJsonDataPaser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISJsonDataPaser.m; sourceTree = "<group>"; };
+		EF5CD66A1A7709330026BD69 /* ISSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSong.h; sourceTree = "<group>"; };
+		EF5CD66B1A7709330026BD69 /* ISSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSong.m; sourceTree = "<group>"; };
+		EF5CD66E1A7709330026BD69 /* NSArray+HOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HOM.h"; sourceTree = "<group>"; };
+		EF5CD66F1A7709330026BD69 /* NSArray+HOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HOM.m"; sourceTree = "<group>"; };
+		EF5CD6701A7709330026BD69 /* ISSearchInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSearchInteractor.h; sourceTree = "<group>"; };
+		EF5CD6711A7709330026BD69 /* ISSearchInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSearchInteractor.m; sourceTree = "<group>"; };
+		EF5CD6721A7709330026BD69 /* ISSearchProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSearchProtocol.h; sourceTree = "<group>"; };
+		EF5CD6731A7709330026BD69 /* ISSongCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSongCreator.h; sourceTree = "<group>"; };
+		EF5CD6741A7709330026BD69 /* ISSongCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSongCreator.m; sourceTree = "<group>"; };
+		EF5CD6771A7709330026BD69 /* ISArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISArrayDataSource.h; sourceTree = "<group>"; };
+		EF5CD6781A7709330026BD69 /* ISArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISArrayDataSource.m; sourceTree = "<group>"; };
+		EF5CD67B1A7709330026BD69 /* ISCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISCircleImageView.h; sourceTree = "<group>"; };
+		EF5CD67C1A7709330026BD69 /* ISCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISCircleImageView.m; sourceTree = "<group>"; };
+		EF5CD67D1A7709330026BD69 /* ISSongDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSongDetailsController.h; sourceTree = "<group>"; };
+		EF5CD67E1A7709330026BD69 /* ISSongDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSongDetailsController.m; sourceTree = "<group>"; };
+		EF5CD6811A7709330026BD69 /* ISSongsListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSongsListCell.h; sourceTree = "<group>"; };
+		EF5CD6821A7709330026BD69 /* ISSongsListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSongsListCell.m; sourceTree = "<group>"; };
+		EF5CD6831A7709330026BD69 /* ISSongsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSongsListController.h; sourceTree = "<group>"; };
+		EF5CD6841A7709330026BD69 /* ISSongsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSongsListController.m; sourceTree = "<group>"; };
+		EFC8D0921A768EF5005F4E4B /* ISFakeSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISFakeSearch.h; sourceTree = "<group>"; };
+		EFC8D0931A768EF5005F4E4B /* ISFakeSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISFakeSearch.m; sourceTree = "<group>"; };
+		EFC8D0951A76970D005F4E4B /* TestJson.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestJson.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF57124E1A758AB3004A2577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C472E56638B633D299080A /* libPods-ITunesSongs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF57126A1A758AB3004A2577 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7333E34DF2DFE537B8CDD821 /* SplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7333EF2D38D15D0BBCF770F5 /* ISSplitControllerConfigurator.h */,
+				7333E568609767D08A2FFA15 /* ISSplitControllerConfigurator.m */,
+			);
+			path = SplitViewController;
+			sourceTree = "<group>";
+		};
+		C44604CD16105D7036454ED6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BAFA7ACC91C1254E190EFD5 /* Pods-ITunesSongs.debug.xcconfig */,
+				380B74F3F00C0CCBAC73FAFB /* Pods-ITunesSongs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CAEF9F5F7DEF38A41B43642F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD19390D63538B2684571E30 /* libPods-ITunesSongs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF2F88721A76392B0040714A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF2F88731A7639430040714A /* XCTestCaseBase.h */,
+				EF2F88761A763AC80040714A /* XCTestCaseBase.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF5712481A758AB3004A2577 = {
+			isa = PBXGroup;
+			children = (
+				EF5712531A758AB3004A2577 /* ITunesSongs */,
+				EF5712701A758AB3004A2577 /* ITunesSongsTests */,
+				EF5712521A758AB3004A2577 /* Products */,
+				C44604CD16105D7036454ED6 /* Pods */,
+				CAEF9F5F7DEF38A41B43642F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF5712521A758AB3004A2577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF5712511A758AB3004A2577 /* ITunesSongs.app */,
+				EF57126D1A758AB3004A2577 /* ITunesSongsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5712531A758AB3004A2577 /* ITunesSongs */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD6611A7709330026BD69 /* Classes */,
+				EF5712581A758AB3004A2577 /* AppDelegate.h */,
+				EF5712591A758AB3004A2577 /* AppDelegate.m */,
+				7333EFC53AD50253F1F0679E /* ISAppDependencyBuilder.h */,
+				7333EAC91C07F8C1C059ED34 /* ISAppDependencyBuilder.m */,
+				EF5712611A758AB3004A2577 /* Main.storyboard */,
+				EF5712641A758AB3004A2577 /* Images.xcassets */,
+				EF5712661A758AB3004A2577 /* LaunchScreen.xib */,
+				EF5712541A758AB3004A2577 /* Supporting Files */,
+			);
+			path = ITunesSongs;
+			sourceTree = "<group>";
+		};
+		EF5712541A758AB3004A2577 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF5712551A758AB3004A2577 /* Info.plist */,
+				EF5712561A758AB3004A2577 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF5712701A758AB3004A2577 /* ITunesSongsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF2F88721A76392B0040714A /* Base */,
+				EF57128D1A759185004A2577 /* Extension */,
+				EFC8D0911A768E5E005F4E4B /* ISSearchInteractorTest */,
+				EF5712871A758AE6004A2577 /* ISSongTests.m */,
+				EF5712861A758AE6004A2577 /* ISRequestManagerTest.m */,
+				EF5712711A758AB3004A2577 /* Supporting Files */,
+			);
+			path = ITunesSongsTests;
+			sourceTree = "<group>";
+		};
+		EF5712711A758AB3004A2577 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF5712721A758AB3004A2577 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF57128D1A759185004A2577 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF57128A1A759178004A2577 /* NSObject+PropertyIntrospection.h */,
+				EF57128B1A759178004A2577 /* NSObject+PropertyIntrospection.m */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		EF5CD6611A7709330026BD69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD66C1A7709330026BD69 /* Search */,
+				EF5CD6621A7709330026BD69 /* Data */,
+				EF5CD6691A7709330026BD69 /* Model */,
+				EF5CD6751A7709330026BD69 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF5CD6621A7709330026BD69 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7333EBB171D9F79E371FAC72 /* ISDataParserProtocol.h */,
+				EF5CD6631A7709330026BD69 /* ISRequestProvider.h */,
+				EF5CD6641A7709330026BD69 /* ISRequestProvider.m */,
+				EF5CD6651A7709330026BD69 /* Parser */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EF5CD6651A7709330026BD69 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD6671A7709330026BD69 /* ISJsonDataPaser.h */,
+				EF5CD6681A7709330026BD69 /* ISJsonDataPaser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		EF5CD6691A7709330026BD69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD66A1A7709330026BD69 /* ISSong.h */,
+				EF5CD66B1A7709330026BD69 /* ISSong.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EF5CD66C1A7709330026BD69 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD66D1A7709330026BD69 /* Categories */,
+				EF5CD6721A7709330026BD69 /* ISSearchProtocol.h */,
+				EF5CD6701A7709330026BD69 /* ISSearchInteractor.h */,
+				EF5CD6711A7709330026BD69 /* ISSearchInteractor.m */,
+				EF5CD6731A7709330026BD69 /* ISSongCreator.h */,
+				EF5CD6741A7709330026BD69 /* ISSongCreator.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EF5CD66D1A7709330026BD69 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD66E1A7709330026BD69 /* NSArray+HOM.h */,
+				EF5CD66F1A7709330026BD69 /* NSArray+HOM.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EF5CD6751A7709330026BD69 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD6761A7709330026BD69 /* DataSource */,
+				EF5CD6791A7709330026BD69 /* SongDetailController */,
+				EF5CD67F1A7709330026BD69 /* SongsListController */,
+				7333E34DF2DFE537B8CDD821 /* SplitViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EF5CD6761A7709330026BD69 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD6771A7709330026BD69 /* ISArrayDataSource.h */,
+				EF5CD6781A7709330026BD69 /* ISArrayDataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		EF5CD6791A7709330026BD69 /* SongDetailController */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD67A1A7709330026BD69 /* ImageView */,
+				EF5CD67D1A7709330026BD69 /* ISSongDetailsController.h */,
+				EF5CD67E1A7709330026BD69 /* ISSongDetailsController.m */,
+			);
+			path = SongDetailController;
+			sourceTree = "<group>";
+		};
+		EF5CD67A1A7709330026BD69 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD67B1A7709330026BD69 /* ISCircleImageView.h */,
+				EF5CD67C1A7709330026BD69 /* ISCircleImageView.m */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		EF5CD67F1A7709330026BD69 /* SongsListController */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD6801A7709330026BD69 /* Cell */,
+				EF5CD6831A7709330026BD69 /* ISSongsListController.h */,
+				EF5CD6841A7709330026BD69 /* ISSongsListController.m */,
+			);
+			path = SongsListController;
+			sourceTree = "<group>";
+		};
+		EF5CD6801A7709330026BD69 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF5CD6811A7709330026BD69 /* ISSongsListCell.h */,
+				EF5CD6821A7709330026BD69 /* ISSongsListCell.m */,
+				EF1397021A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.h */,
+				EF1397031A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EFC8D0911A768E5E005F4E4B /* ISSearchInteractorTest */ = {
+			isa = PBXGroup;
+			children = (
+				EFC8D0951A76970D005F4E4B /* TestJson.plist */,
+				EFC8D0921A768EF5005F4E4B /* ISFakeSearch.h */,
+				EFC8D0931A768EF5005F4E4B /* ISFakeSearch.m */,
+				EF2F886D1A7638000040714A /* ISSearchInteractorTest.m */,
+			);
+			path = ISSearchInteractorTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF5712501A758AB3004A2577 /* ITunesSongs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5712771A758AB3004A2577 /* Build configuration list for PBXNativeTarget "ITunesSongs" */;
+			buildPhases = (
+				98E7DC7C9F2C56C674711F96 /* Check Pods Manifest.lock */,
+				EF57124D1A758AB3004A2577 /* Sources */,
+				EF57124E1A758AB3004A2577 /* Frameworks */,
+				EF57124F1A758AB3004A2577 /* Resources */,
+				02991944B52E35309BE10054 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITunesSongs;
+			productName = ITunesSongs;
+			productReference = EF5712511A758AB3004A2577 /* ITunesSongs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF57126C1A758AB3004A2577 /* ITunesSongsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF57127A1A758AB3004A2577 /* Build configuration list for PBXNativeTarget "ITunesSongsTests" */;
+			buildPhases = (
+				EF5712691A758AB3004A2577 /* Sources */,
+				EF57126A1A758AB3004A2577 /* Frameworks */,
+				EF57126B1A758AB3004A2577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF57126F1A758AB3004A2577 /* PBXTargetDependency */,
+			);
+			name = ITunesSongsTests;
+			productName = ITunesSongsTests;
+			productReference = EF57126D1A758AB3004A2577 /* ITunesSongsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF5712491A758AB3004A2577 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = salabaha;
+				TargetAttributes = {
+					EF5712501A758AB3004A2577 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					EF57126C1A758AB3004A2577 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EF5712501A758AB3004A2577;
+					};
+				};
+			};
+			buildConfigurationList = EF57124C1A758AB3004A2577 /* Build configuration list for PBXProject "ITunesSongs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF5712481A758AB3004A2577;
+			productRefGroup = EF5712521A758AB3004A2577 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5712501A758AB3004A2577 /* ITunesSongs */,
+				EF57126C1A758AB3004A2577 /* ITunesSongsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF57124F1A758AB3004A2577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5712631A758AB3004A2577 /* Main.storyboard in Resources */,
+				EF5712681A758AB3004A2577 /* LaunchScreen.xib in Resources */,
+				EF5712651A758AB3004A2577 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF57126B1A758AB3004A2577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC8D0961A76970D005F4E4B /* TestJson.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02991944B52E35309BE10054 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ITunesSongs/Pods-ITunesSongs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98E7DC7C9F2C56C674711F96 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF57124D1A758AB3004A2577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5CD6891A7709330026BD69 /* ISSearchInteractor.m in Sources */,
+				EF5CD6871A7709330026BD69 /* ISSong.m in Sources */,
+				EF5CD68E1A7709330026BD69 /* ISSongsListCell.m in Sources */,
+				EF5CD68F1A7709330026BD69 /* ISSongsListController.m in Sources */,
+				EF57125A1A758AB3004A2577 /* AppDelegate.m in Sources */,
+				EF5712571A758AB3004A2577 /* main.m in Sources */,
+				EF5CD68B1A7709330026BD69 /* ISArrayDataSource.m in Sources */,
+				EF5CD6881A7709330026BD69 /* NSArray+HOM.m in Sources */,
+				EF5CD68D1A7709330026BD69 /* ISSongDetailsController.m in Sources */,
+				EF5CD68C1A7709330026BD69 /* ISCircleImageView.m in Sources */,
+				EF5CD68A1A7709330026BD69 /* ISSongCreator.m in Sources */,
+				EF5CD6851A7709330026BD69 /* ISRequestProvider.m in Sources */,
+				EF1397041A8E32F700E5CC43 /* ISSongsListCell+configureWithSong.m in Sources */,
+				EF5CD6861A7709330026BD69 /* ISJsonDataPaser.m in Sources */,
+				7333ED1E2610908FFF013FF5 /* ISAppDependencyBuilder.m in Sources */,
+				7333E6AE0F692A4537A3827A /* ISSplitControllerConfigurator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5712691A758AB3004A2577 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC8D0941A768EF5005F4E4B /* ISFakeSearch.m in Sources */,
+				EF2F88771A763AC80040714A /* XCTestCaseBase.m in Sources */,
+				EF2F886E1A7638000040714A /* ISSearchInteractorTest.m in Sources */,
+				EF57128C1A759178004A2577 /* NSObject+PropertyIntrospection.m in Sources */,
+				EF5712891A758AE6004A2577 /* ISSongTests.m in Sources */,
+				EF5712881A758AE6004A2577 /* ISRequestManagerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF57126F1A758AB3004A2577 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF5712501A758AB3004A2577 /* ITunesSongs */;
+			targetProxy = EF57126E1A758AB3004A2577 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF5712611A758AB3004A2577 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5712621A758AB3004A2577 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF5712661A758AB3004A2577 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5712671A758AB3004A2577 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF5712751A758AB3004A2577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF5712761A758AB3004A2577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF5712781A758AB3004A2577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAFA7ACC91C1254E190EFD5 /* Pods-ITunesSongs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ITunesSongs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF5712791A758AB3004A2577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 380B74F3F00C0CCBAC73FAFB /* Pods-ITunesSongs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ITunesSongs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EF57127B1A758AB3004A2577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ITunesSongsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ITunesSongs.app/ITunesSongs";
+			};
+			name = Debug;
+		};
+		EF57127C1A758AB3004A2577 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ITunesSongsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ITunesSongs.app/ITunesSongs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF57124C1A758AB3004A2577 /* Build configuration list for PBXProject "ITunesSongs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5712751A758AB3004A2577 /* Debug */,
+				EF5712761A758AB3004A2577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5712771A758AB3004A2577 /* Build configuration list for PBXNativeTarget "ITunesSongs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5712781A758AB3004A2577 /* Debug */,
+				EF5712791A758AB3004A2577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF57127A1A758AB3004A2577 /* Build configuration list for PBXNativeTarget "ITunesSongsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF57127B1A758AB3004A2577 /* Debug */,
+				EF57127C1A758AB3004A2577 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF5712491A758AB3004A2577 /* Project object */;
+}
