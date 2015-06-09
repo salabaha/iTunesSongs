@@ -1,3 +1,3 @@
 # iTunesSongs
 
-Sample project showing usage of protocols to extend classes behaviours. 
+Sample project showing clean code approach in architecting ios apps.
