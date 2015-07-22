@@ -1,3 +1,3 @@
 # iTunesSongs
 
-Sample project showing clean code approach in architecting ios apps.
+Sample project showing protocol-oriented approach in architecting ios apps.
